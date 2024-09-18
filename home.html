@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>amparo.care</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    <!-- Custom Style -->
+    <link href="assets/style.css" rel="stylesheet"> <!-- Aqui você chama o seu style.css -->
+    
+    <style>
+      /* Rotação do Chevron quando ativo */
+      .rotate {
+        transform: rotate(180deg);
+        transition: transform 0.3s;
+      }
+    </style>
+  </head>
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <!-- Sidebar -->
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title">
+              <a href="home.html" class="site_title">
+                <em><code> < Prototipaí ></Prototipa> </code></em>
+              </a>         
+            </div>
+            
+            <div class="clearfix"></div>
+
+            <!-- Menu Profile Quick Info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="assets/images/user.png" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Olá,</span>
+                <h2>Cheila</h2>
+              </div>
+            </div>
+            <!-- /Menu Profile Quick Info -->
+
+            <br />
+
+            <!-- Sidebar Menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <ul class="nav side-menu">
+                  <li>
+                    <a><i class="fa fa-home"></i> Discovery Rápido <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="roteiro.html">Gerar Roteiro</a></li>
+                      <li><a href="sessao.html">Gravar Sessões</a></li>
+                      <li><a href="escopo.html">Validar Escopo</a></li>
+                      <li><a href="documentos.html">Gerar Documentação</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a><i class="fa fa-edit"></i> Documentos<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="onboarding.html">Contratos</a></li>
+                      <li><a href="factors.html">Requisitos</a></li>
+                      <li>
+                        <a>User Stories<span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                          <li class="sub_menu"><a href="cycles.html">Casos de Teste <span class="label label-success pull-right">Em breve</span></a></li>
+                          <li class="sub_menu"><a href="outofline.html">Prompts <span class="label label-success pull-right">Em breve</span></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a><i class="fa fa-bell"></i> Sessões <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="new_communication.html">Futuras</a></li>
+                      <li><a href="new_communication.html">Passadas</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /Sidebar Menu -->
+
+          </div>
+        </div>
+        <!-- /Sidebar -->
+
+        <!-- Top Navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/images/user.png" alt="">Cheila
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Perfil</a></li>
+                    <li>
+                      <a href="javascript:;">
+                        <span>Administrador</span>
+                      </a>
+                    </li>
+                    <li><a href="javascript:;">Help</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Sair</a></li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="assets/images/user.png" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <!-- Repita os itens conforme necessário -->
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /Top Navigation -->
+
+        <!-- Page Content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="clearfix"></div>
+
+            <!-- Conteúdo Principal -->
+            <main class="content">
+              <!-- Título e Botão na mesma linha -->
+              <div class="content-header">
+                <h1>Definição de Escopo do Projeto</h1>
+                <button class="button-primary">Gerar Escopo do Projeto</button>
+              </div>
+
+              <!-- Lista de Funcionalidades -->
+              <section class="functionalities-section">
+                <ul class="functionalities-list">
+                  <!-- Item 1 -->
+                  <li class="card">
+                    <div class="card-header">
+                      <h2>1. Interface do Blog</h2>
+                      <a href="avaliada1.html" class="status-button confirmed">Necessidade Confirmada</a>
+                    </div>
+                    <p class="status-item"><strong>Status do Item:</strong> Cliente deseja a funcionalidade.</p>
+                    <p class="description">Interface visual com CTAs dinâmicas adaptáveis ao conteúdo específico, otimizadas para SEO e lead growth.</p>
+                  </li>
+
+                  <!-- Item 2 -->
+                  <li class="card">
+                    <div class="card-header">
+                      <h2>2. Geração Automática de Jobs to be Done por IA</h2>
+                      <a href="roteiro.html" class="status-button incomplete">Completar Informações</a>
+                    </div>
+                    <p class="status-item"><strong>Status do Item:</strong> Cliente ainda tem dúvidas.</p>
+                    <p class="description">IA para geração automática de jobs to be done com base em temas fornecidos, evitando temas sem volume de busca.</p>
+                  </li>
+
+                  <!-- Item 3 -->
+                  <li class="card">
+                    <div class="card-header">
+                      <h2>3. Geração de Conteúdo Automático</h2>
+                      <a href="pendente.html" class="status-button pending">Validar Necessidades</a>
+                    </div>
+                    <p class="status-item"><strong>Status do Item:</strong> Cliente deseja a funcionalidade.</p>
+                    <p class="description">Sistema de inserção baseado em “jobs to be done” que gera título, URL amigável, description, labels e conteúdo do blog.</p>
+                  </li>
+
+                  <!-- Item 4 -->
+                  <li class="card">
+                    <div class="card-header">
+                      <h2>4. Agendamentos de Publicação</h2>
+                      <a href="roteiro2.html" class="status-button incomplete">Completar Informações</a>
+                    </div>
+                    <p class="status-item"><strong>Status do Item:</strong> Cliente deseja a funcionalidade.</p>
+                    <p class="description">Sistema que permite agendamentos de publicações diárias automáticas para evitar detecção de conteúdo em massa pelo Google.</p>
+                  </li>
+
+                  <!-- Item 5 -->
+                  <li class="card">
+                    <div class="card-header">
+                      <h2>5. Geração de CTAs Contextuais</h2>
+                      <button class="status-button pending">Validar Necessidades</button>
+                    </div>
+                    <p class="status-item"><strong>Status do Item:</strong> Cliente deseja a funcionalidade.</p>
+                    <p class="description">CTAs específicas e flexíveis para cada post, alinhadas com o tema do conteúdo.</p>
+                  </li>
+
+                  <!-- Item 6 -->
+                  <li class="card">
+                    <div class="card-header">
+                      <h2>6. Integração com APIs para Palavras-Chave</h2>
+                      <a href="avaliada6.html" class="status-button confirmed">Necessidade Confirmada</a>
+                    </div>
+                    <p class="status-item"><strong>Status do Item:</strong> Cliente deseja a funcionalidade.</p>
+                    <p class="description">Integração com API do Google Ads (ou similar) para pesquisa e validação de palavras-chave de cauda longa com volume de buscas.</p>
+                  </li>
+
+                  <!-- Item 7 -->
+                  <li class="card">
+                    <div class="card-header">
+                      <h2>7. Geração de Conteúdo com Regras de SEO</h2>
+                      <a href="avaliada7.html" class="status-button confirmed">Necessidade Confirmada</a>
+                    </div>
+                    <p class="status-item"><strong>Status do Item:</strong> Cliente deseja a funcionalidade.</p>
+                    <p class="description">Conteúdo deve seguir regras de SEO específicas fornecidas pelo cliente.</p>
+                  </li>
+
+                  <!-- Item 8 -->
+                  <li class="card">
+                    <div class="card-header">
+                      <h2>8. Edição e Revisão Manual</h2>
+                      <a href="avaliada8.html" class="status-button confirmed">Necessidade Confirmada</a>
+                    </div>
+                    <p class="status-item"><strong>Status do Item:</strong> Cliente deseja a funcionalidade.</p>
+                    <p class="description">Postagens devem ser passíveis de edição manual pelo cliente.</p>
+                  </li>
+
+                  <!-- Item 9 -->
+                  <li class="card">
+                    <div class="card-header">
+                      <h2>9. Prioridade na Geração de Conteúdo</h2>
+                      <a href="avaliada9.html" class="status-button confirmed">Necessidade Confirmada</a>
+                    </div>
+                    <p class="status-item"><strong>Status do Item:</strong> Cliente deseja a funcionalidade.</p>
+                    <p class="description">Priorizar sempre jobs to be done inseridos manualmente pelo cliente em relação aos gerados automaticamente.</p>
+                  </li>
+                </ul>
+              </section>
+
+            </main>
+          </div>
+        </div>
+        <!-- /Page Content -->
+
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="assets/js/custom.min.js"></script>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const sidebarToggle = document.getElementById('menu_toggle');
+        const sidebar = document.querySelector('.left_col');
+        const menuTexts = document.querySelectorAll('.menu-text');
+
+        sidebarToggle.addEventListener('click', () => {
+          sidebar.classList.toggle('collapsed');
+          if (sidebar.classList.contains('collapsed')) {
+            menuTexts.forEach(text => {
+              text.style.display = 'none';
+            });
+          } else {
+            menuTexts.forEach(text => {
+              text.style.display = 'block';
+            });
+          }
+        });
+      });
+    </script>
+
+  </body>
+</html>
